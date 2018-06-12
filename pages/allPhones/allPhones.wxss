@@ -1,0 +1,28 @@
+.allPhones_searchWrap {
+    background: #262A37;
+    padding: 15rpx 38rpx 17rpx 34rpx;
+    border-bottom: 1px solid rgba(203, 203, 205, 0.1);
+}
+
+.searchInput {
+    line-height: 56rpx;
+    font-size: 26rpx;
+    letter-spacing: 0.28rpx;
+    border: 1px solid #016BFF;
+    border-radius: 10rpx;
+}
+
+.allPhones_header {
+    background: #1C1B20;
+    padding: 18rpx 0 16rpx 0;
+}
+
+.allPhones_header text {
+    display: block;
+    line-height: 26rpx;
+    padding-left: 18rpx;
+    font-size: 26rpx;
+    color: #B2B2B2;
+    letter-spacing: 0.28rpx;
+    border-left: 2px solid #016BFF;
+}

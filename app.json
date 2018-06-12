@@ -1,0 +1,25 @@
+{
+    "pages":[
+        "pages/allPhones/allPhones",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/h5/h5"
+    ],
+
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "WHYLAB",
+        "navigationBarTextStyle":"white"
+    }, 
+
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页"
+        }, {
+            "pagePath": "pages/allPhones/allPhones",
+            "text": "分类"
+        }]
+    }
+}

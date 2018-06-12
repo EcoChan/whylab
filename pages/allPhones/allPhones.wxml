@@ -1,0 +1,14 @@
+<!-- 分类 -->
+<view class="container">
+
+    <view class="allPhones_searchWrap">
+        <input class="searchInput" placeholder-style="color:#B2B2B2" placeholder="输入您想了解的机型..." />
+    </view>
+
+    <view class="allPhones_header"><text>推荐分类</text></view>
+
+    <view class="allPhones_contentWrap">
+        <view class="content_companyes"></view>
+    </view>
+
+</view>
