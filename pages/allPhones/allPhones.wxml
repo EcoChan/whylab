@@ -1,5 +1,5 @@
 <!-- 分类 -->
-<view class="container">
+<view class="container allPhones_container">
 
     <view class="allPhones_searchWrap">
         <input class="searchInput" placeholder-style="color:#B2B2B2" placeholder="输入您想了解的机型..." />
@@ -9,6 +9,7 @@
 
     <view class="allPhones_contentWrap">
         <view class="content_companyes"></view>
+        <view class="content_list"></view>
     </view>
 
 </view>

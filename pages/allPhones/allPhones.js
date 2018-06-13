@@ -3,7 +3,9 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    companyes: [
+        {'name': ''},
+    ]
   },
   onLoad: function () {
     this.setData({
