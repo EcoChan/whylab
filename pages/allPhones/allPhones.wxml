@@ -8,8 +8,18 @@
     <view class="allPhones_header"><text>推荐分类</text></view>
 
     <view class="allPhones_contentWrap">
-        <view class="content_companyes"></view>
-        <view class="content_list"></view>
+
+        <scroll-view class="content_companyes" scroll-y="true" style="height: 100%">
+            <view wx:for="{{companyes}}" wx:key="{{index}}" class="companyes_name">{{ item }}</view>
+        </scroll-view>
+
+        <scroll-view class="content_list" scroll-y="true" style="height: 100%">
+            <navigator wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="list_item" url="#" redirect hover-class="className">
+                <image src="http://p92c04xab.bkt.clouddn.com/507.png"></image>
+                <view>小米</view>
+                <view>小米 8</view>
+            </navigator>
+        </scroll-view>
     </view>
 
 </view>

@@ -38,6 +38,46 @@ page {
 }
 
 .allPhones_contentWrap {
+    position: relative;
     flex-grow: 1;
     background: #1C1B20;
+    overflow: hidden;
+}
+
+.content_companyes {
+    position: absolute;
+    padding: 9rpx 0;
+    background: #293558;
+    width: 150rpx;
+}
+
+.companyes_name {
+    line-height: 78rpx;
+    font-size: 26rpx;
+    color: #B2B2B2;
+    letter-spacing: 0;
+    text-align: center; 
+}
+
+.content_list {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding-left: 150rpx;
+}
+
+.list_item {
+    width: 50%;
+    font-size: 28rpx;
+    color: #B2B2B2;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.list_item image {
+    width: 125rpx;
+    height: 250rpx;
 }
