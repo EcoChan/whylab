@@ -1,4 +1,7 @@
 /**index.wxss**/
+page {
+    background:#1c1b21;
+}
 
 .index-swiper {
     height: 450rpx; 

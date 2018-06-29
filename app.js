@@ -34,7 +34,33 @@ App({
         })
         */
     },
+
+    // 封装 ajax
+    ajax: function (url, data, successCb, failCb) {
+        var self = this;
+        var fullUrl = this.globalData.host + url;
+        //var token = wx.getStorageSync('token') || '';
+        wx.request({
+            url: fullUrl,
+            data: data,
+            method: 'POST', //默认是GET
+            header: {
+                'content-type': 'application/x-www-form-urlencoded'
+                //'content-type': 'application/json' // 默认值
+            },
+            success: function(res) {
+                var data = res.data;
+                if(data.status == 200) {
+                    successCb && successCb(data.message);
+                } else {
+                    failCb && failCb();
+                }
+            }
+        })
+    },
     globalData: {
+        //host: 'http://beta.yueyear.com',
+        host: 'https://yueyear.com',
         userInfo: null
     }
 })

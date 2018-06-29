@@ -2,23 +2,34 @@
 <view class="container allPhones_container">
 
     <view class="allPhones_searchWrap">
-        <input class="searchInput" placeholder-style="color:#B2B2B2" placeholder="输入您想了解的机型..." />
+        <image src="/statics/images/search.png"></image>
+        <input class="searchInput" confirm-type="search" placeholder-style="color:#B2B2B2" placeholder="输入您想了解的机型..." bindinput="setKeyword" bindconfirm="search" />
     </view>
 
-    <view class="allPhones_header"><text>推荐分类</text></view>
+    <!--<view class="allPhones_header"><text>推荐/搜索</text></view>-->
 
     <view class="allPhones_contentWrap">
-
         <scroll-view class="content_companyes" scroll-y="true" style="height: 100%">
-            <view wx:for="{{companyes}}" wx:key="{{index}}" class="companyes_name">{{ item }}</view>
+            <view class="companyes_name {{ brand == '' ? 'active' : '' }}" data-brand="" bindtap="searchByBrand"><text>推荐/搜索</text></view>
+            <view wx:for="{{companyes}}" wx:key="{{index}}" class="companyes_name {{ brand == item ? 'active' : '' }}" data-brand="{{ item }}" bindtap="searchByBrand">
+                <text>{{ item }}</text>
+            </view>
         </scroll-view>
-
+        
         <scroll-view class="content_list" scroll-y="true" style="height: 100%">
-            <navigator wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="list_item" url="#" redirect hover-class="className">
-                <image src="http://p92c04xab.bkt.clouddn.com/507.png"></image>
-                <view>小米</view>
-                <view>小米 8</view>
-            </navigator>
+            <view wx:if="{{ list.length > 0 }}" class="content_listWrap">
+                <navigator wx:for="{{ list }}" wx:key="{{ item.id }}" class="list_item" url="{{ item.h5_target }}" hover-class="className">
+                    <image src="{{ item.cover }}"></image>
+                    <view class="list_name">{{ item.brand }}</view>
+                    <view class="list_company">{{ item.title }}</view>
+                </navigator>
+            </view>
+
+            <view class="allPhones_noResult"  hidden="{{ !showNoResult }}">
+                <image src="/statics/images/icon_no_result@1.5x.png"></image>
+                <text>无相关机型</text>
+            </view>
+
         </scroll-view>
     </view>
 

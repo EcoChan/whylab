@@ -9,9 +9,18 @@ page {
 }
 
 .allPhones_searchWrap {
+    color: #B2B2B2;
     background: #262A37;
     padding: 15rpx 38rpx 17rpx 34rpx;
     border-bottom: 1px solid rgba(203, 203, 205, 0.1);
+}
+
+.allPhones_searchWrap image {
+    position: absolute;
+    top: 36rpx;
+    left: 60rpx;
+    width: 24rpx;
+    height: 24rpx;
 }
 
 .searchInput {
@@ -20,22 +29,9 @@ page {
     letter-spacing: 0.28rpx;
     border: 1px solid #016BFF;
     border-radius: 10rpx;
+    padding: 10rpx 10rpx 10rpx 71rpx;
 }
 
-.allPhones_header {
-    background: #1C1B20;
-    padding: 18rpx 0 16rpx 0;
-}
-
-.allPhones_header text {
-    display: block;
-    line-height: 26rpx;
-    padding-left: 18rpx;
-    font-size: 26rpx;
-    color: #B2B2B2;
-    letter-spacing: 0.28rpx;
-    border-left: 2px solid #016BFF;
-}
 
 .allPhones_contentWrap {
     position: relative;
@@ -45,18 +41,33 @@ page {
 }
 
 .content_companyes {
+    z-index: 2;
     position: absolute;
-    padding: 9rpx 0;
     background: #293558;
     width: 150rpx;
 }
 
 .companyes_name {
-    line-height: 78rpx;
+    padding: 28rpx 0;
     font-size: 26rpx;
     color: #B2B2B2;
     letter-spacing: 0;
     text-align: center; 
+}
+
+.companyes_name.active {
+    background: #1C1B20;
+}
+.companyes_name text {
+    display: block;
+    line-height: 26rpx;
+    font-size: 26rpx;
+    letter-spacing: 0.28rpx;
+    border-left: 2px solid #293558;
+}
+
+.companyes_name.active text {
+    border-left: 2px solid #016BFF;
 }
 
 .content_list {
@@ -69,15 +80,52 @@ page {
     padding-left: 150rpx;
 }
 
+.content_listWrap {
+    padding-top: 78rpx;
+}
+
 .list_item {
     width: 50%;
+    padding-left: 10rpx;
+    box-sizing: border-box;
     font-size: 28rpx;
     color: #B2B2B2;
     letter-spacing: 0;
     text-align: center;
+    float: left;
+    margin-bottom: 80rpx;
+}
+
+.list_name {
+    font-size: 20rpx;
+    line-height: 28rpx;
+    margin-top: 14rpx;
+    margin-bottom: 10rpx;
+}
+
+.list_company {
+    line-height: 40rpx;
 }
 
 .list_item image {
-    width: 125rpx;
+    width: 250rpx;
     height: 250rpx;
+}
+
+.allPhones_noResult {
+    text-align: center;
+    margin:0 auto;
+    margin-top: 300rpx;
+}
+.allPhones_noResult image {
+    width: 206rpx;
+    height: 206rpx;
+}
+
+.allPhones_noResult text {
+    display: block;
+    margin-top: 13rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    color: #B2B2B2;
 }

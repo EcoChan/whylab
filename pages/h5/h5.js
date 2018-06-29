@@ -6,11 +6,17 @@ Page({
     data: {
         id: '1'
     },
+
     onLoad: function(options) {
         this.setData({
           id: options.id
         })
+        wx.showLoading({ title: '加载中...' });
+        setTimeout(function() {
+            wx.hideLoading();
+        }, 1500);
     },
+
     onShareAppMessage: function (res) {
         var str = res.webViewUrl.split('?')[1];
         console.log(str);

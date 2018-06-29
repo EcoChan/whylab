@@ -1,12 +1,12 @@
 {
     "pages":[
-        "pages/allPhones/allPhones",
         "pages/index/index",
-        "pages/logs/logs",
+        "pages/allPhones/allPhones",
         "pages/h5/h5"
     ],
 
     "window":{
+        "backgroundColor": "#1c1b21",
         "backgroundTextStyle":"light",
         "navigationBarBackgroundColor": "#000",
         "navigationBarTitleText": "WHYLAB",
@@ -14,12 +14,20 @@
     }, 
 
     "tabBar": {
+        "borderStyle": "white",
+        "backgroundColor": "#0E0E0E",
+        "color": "#B2B2B2",
+        "selectedColor": "#385091",
         "list": [{
+            "text": "热门推荐",
             "pagePath": "pages/index/index",
-            "text": "首页"
+            "iconPath": "statics/images/icon_recommend@1.5x.png",
+            "selectedIconPath": "statics/images/icon_recommend_select@1.5x.png"
         }, {
+            "text": "机型列表",
             "pagePath": "pages/allPhones/allPhones",
-            "text": "分类"
+            "iconPath": "statics/images/icon_list@1.5x.png",
+            "selectedIconPath": "statics/images/icon_list_select@1.5x.png"
         }]
     }
 }
