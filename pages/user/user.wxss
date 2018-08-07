@@ -1,0 +1,43 @@
+page {
+    background: #1C1B20;
+}
+
+.user_myPhones {
+    padding: 18rpx 25rpx 59rpx 25rpx;
+}
+.user_header {
+    padding: 3rpx 0;
+    border-left: 6rpx solid #016BFF;
+    line-height: 22rpx;
+    padding-left: 10rpx;
+    font-size: 20rpx;
+    color: #B2B2B2;
+    letter-spacing: 0.21rpx;
+}
+.myPhones_swiper {
+    margin-top: 15rpx;
+    height: 450rpx;
+    border: 1px solid #3A3A3B;
+    /*box-shadow: 0 18rpx 28rpx -21rpx rgba(252,253,255,0.54);*/
+    border-radius: 10rpx;    
+}
+
+.user_watchList {
+    padding: 0 25rpx;
+}
+.watchList_scroll {
+    margin-top: 15rpx;
+    height: 444rpx;
+    overflow: hidden;
+}
+.watchList_content {
+    display: flex;
+    position: absolute;
+}
+.watchList_item {
+    width: 250rpx;
+    height: 440rpx;
+    border: 1px solid #3A3A3B;
+    border-radius: 10rpx;
+    margin-right: 16rpx;
+}

@@ -1,7 +1,9 @@
 {
     "pages":[
+        "pages/user/user",
         "pages/index/index",
         "pages/allPhones/allPhones",
+        "pages/rank/rank",
         "pages/h5/h5"
     ],
 
@@ -26,6 +28,16 @@
         }, {
             "text": "机型列表",
             "pagePath": "pages/allPhones/allPhones",
+            "iconPath": "statics/images/icon_list@1.5x.png",
+            "selectedIconPath": "statics/images/icon_list_select@1.5x.png"
+        }, {
+            "text": "排行榜",
+            "pagePath": "pages/rank/rank",
+            "iconPath": "statics/images/icon_list@1.5x.png",
+            "selectedIconPath": "statics/images/icon_list_select@1.5x.png"
+        }, {
+            "text": "个人中心",
+            "pagePath": "pages/user/user",
             "iconPath": "statics/images/icon_list@1.5x.png",
             "selectedIconPath": "statics/images/icon_list_select@1.5x.png"
         }]

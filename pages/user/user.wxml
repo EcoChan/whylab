@@ -1,0 +1,22 @@
+<!-- 个人中心 -->
+<view class="user_container">
+    <view class="user_myPhones">
+        <view class="user_header">我的手机</view>
+        <swiper class="myPhones_swiper">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+    <view class="user_watchList">
+        <view class="user_header">我的心愿单</view>
+        <scroll-view class="watchList_scroll" scroll-x style="width: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view class="watchList_content">
+                <view wx:for="{{ [1,2,3,4] }}" class="watchList_item"></view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
