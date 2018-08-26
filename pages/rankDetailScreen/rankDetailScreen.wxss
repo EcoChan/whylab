@@ -1,0 +1,37 @@
+page {
+    background: #1c1b21;
+}
+
+.rankDetail_tabs {
+    display: flex;
+    line-height: 100rpx;
+    font-size: 25rpx;
+    color: #B2B2B2;
+    border-bottom: 1px solid rgba(151,151,151, 0.5);
+}
+
+.tabs_item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tabs_item text {
+    display:block;
+    width:25px;
+    margin:0 auto;
+    border-bottom:2px solid #1c1b21;
+}
+
+.tabs_item.active text {
+    border-bottom:2px solid #016BFF;
+}
+
+.content_item {
+    padding: 45rpx 53rpx; 
+    color: #B2B2B2;
+    box-sizing: border-box;
+    font-size: 18rpx;
+}
+
+.content_des {
+}

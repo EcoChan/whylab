@@ -1,8 +1,19 @@
-.log-list {
-  display: flex;
-  flex-direction: column;
-  padding: 40rpx;
+.rank_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
-.log-item {
-  margin: 10rpx;
+
+navigator {
+    display: block;
+    position: relative;
+    flex-grow: 1;
+}
+
+image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }

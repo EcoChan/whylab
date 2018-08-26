@@ -1,3 +1,14 @@
 <!-- 排行榜 -->
-<view class="container log-list">
+<view class="rank_container">
+    <navigator url="/pages/rankDetailScreen/rankDetailScreen" redirect hover-class="className">
+        <image src="/statics/icons/box_screen_ranking@1.5x.png" />
+    </navigator>
+
+    <navigator url="" redirect hover-class="className">
+        <image src="/statics/icons/box_battery_ranking@1.5x.png" />
+    </navigator>
+
+    <navigator url="" redirect hover-class="className">
+        <image src="/statics/icons/box_camera_ranking@1.5x.png" />
+    </navigator>
 </view>

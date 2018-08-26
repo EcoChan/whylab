@@ -1,0 +1,26 @@
+<view class="rankDetail_container">
+
+    <view class="rankDetail_tabs">
+        <view class="tabs_item {{ currentTab == 0 ? 'active' : '' }}" data-current="0" bindtap="switchTab"><text>综合</text></view>
+        <view class="tabs_item {{ currentTab == 1 ? 'active' : '' }}" data-current="1" bindtap="switchTab"><text>亮度</text></view>
+        <view class="tabs_item {{ currentTab == 2 ? 'active' : '' }}" data-current="2" bindtap="switchTab"><text>色温</text></view>
+        <view class="tabs_item {{ currentTab == 3 ? 'active' : '' }}" data-current="3" bindtap="switchTab"><text>色域</text></view>
+        <view class="tabs_item {{ currentTab == 4 ? 'active' : '' }}" data-current="4" bindtap="switchTab"><text>色准</text></view>
+    </view>
+
+     <swiper class="tab_content" current="{{currentTab}}" bindchange="">
+        <block>
+            <swiper-item  class="content_item">
+                <view>
+                    <text class="content_des">*屏幕综合评分说明：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或发发或或哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈。</text>
+                    <image src="" />
+                </view>
+            </swiper-item>
+        </block>
+        <block>
+            <swiper-item>
+            2
+            </swiper-item>
+        </block>
+    </swiper>
+</view>

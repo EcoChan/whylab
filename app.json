@@ -1,9 +1,10 @@
 {
     "pages":[
+        "pages/rankDetailScreen/rankDetailScreen",
+        "pages/rank/rank",
         "pages/user/user",
         "pages/index/index",
         "pages/allPhones/allPhones",
-        "pages/rank/rank",
         "pages/h5/h5"
     ],
 
